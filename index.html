@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>school3web</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=DM+Sans:wght@300;400;500;600&family=Space+Grotesk:wght@300;400;500;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaquiery.css">
+</head>
+
+<body>
+
+    <!-- SCROLL PROGRESS -->
+    <div id="progress-bar"></div>
+
+    <!-- ============================================================
+     NAVBAR
+     ============================================================ -->
+    <nav id="navbar">
+        <a href="#hero" class="nav-logo hover-target">
+            <div class="logo-icon"><img src="logo.png" alt="" ></div>
+            <span>Radhe Krishna Senior Secondary School</span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="#hero" class="hover-target">Home</a></li>
+            <li><a href="#about" class="hover-target">About</a></li>
+            <li><a href="#highlights" class="hover-target">Highlights</a></li>
+            <li><a href="#academics" class="hover-target">Academics</a></li>
+            <li><a href="#teachers" class="hover-target">Teachers</a></li>
+            <li><a href="#achievers" class="hover-target">Achievers</a></li>
+            <li><a href="#gallery" class="hover-target">Gallery</a></li>
+        </ul>
+        <div style="display:flex;align-items:center;gap:1rem">
+
+            <a href="#contact" class="nav-cta hover-target">Contact</a>
+        </div>
+        <button class="hamburger hover-target" id="hamburger" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#about" class="mob-link">About</a>
+        <a href="#features" class="mob-link">Why Choose Us</a>
+        <a href="#academics" class="mob-link">Academics</a>
+        <a href="#facilities" class="mob-link">Facilities</a>
+        <a href="#toppers" class="mob-link">Toppers</a>
+        <a href="#testimonials" class="mob-link">Testimonials</a>
+        <a href="#contact" class="mob-link">Contact</a>
+        <a href="#admission" class="btn-primary" style="margin-top:1rem;justify-content:center">Admissions Open</a>
+    </div>
+
+    <!-- heroo -->
+    <section id="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-grid"></div>
+        <div class="hero-content">
+            <div class="hero-badge"><span class="dot"></span> Admissions Open 2026–27</div>
+            <h1 class="hero-title">
+                Shaping<br />
+                <span class="grad-text">Future Leaders</span>
+            </h1>
+            <p class="hero-subtitle">Where academic excellence meets character development. Radhe Krishna Senior Secondary School School
+                — India's premier institution for holistic education since 1994.</p>
+            <div class="hero-btns">
+                <a href="#contact" class="btn-primary hover-target">
+                    <i class="fas fa-graduation-cap"></i> Contact us
+                </a>
+                <a href="#facilities" class="btn-secondary hover-target">
+                    <i class="fas fa-camera"></i> Explore Campus
+                </a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ============================================================
+     ABOUT
+     ============================================================ -->
+    <section id="about">
+        <div class="container">
+            <div class="inner">
+                <div class="about-img-wrap reveal">
+                    <div class="about-img-frame">
+                        <div class="about-img-mock"> </div>
+                    </div>
+                    <div class="stat-cards">
+                        <div class="stat-card hover-target">
+                            <div>
+                                <div class="stat-num" data-count="30">0</div>
+                                <div class="stat-label">Years of Excellence</div>
+                            </div>
+                            <i class="fas fa-award" style="color:var(--gold);font-size:1.5rem"></i>
+                        </div>
+                        <div class="stat-card hover-target">
+                            <div>
+                                <div class="stat-num" data-count="4200">0</div>
+                                <div class="stat-label">Students Enrolled</div>
+                            </div>
+                            <i class="fas fa-users" style="color:var(--accent1);font-size:1.5rem"></i>
+                        </div>
+                        <div class="stat-card hover-target">
+                            <div>
+                                <div class="stat-num" data-count="180">0</div>
+                                <div class="stat-label">Expert Faculty</div>
+                            </div>
+                            <i class="fas fa-chalkboard-teacher" style="color:var(--accent2);font-size:1.5rem"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-content reveal">
+                    <span class="section-label">About Us</span>
+                    <h2 class="section-title">Building Minds,<br />Inspiring <span class="grad-text">Futures</span></h2>
+                    <p class="section-sub">Established in 1994, Radhe Krishna Senior Secondary School School has been at the forefront
+                        of progressive education in India. We blend rigorous academics with holistic development,
+                        nurturing every child's unique potential.</p>
+                    <p class="section-sub" style="margin-top:1rem">Our CBSE-affiliated curriculum is enhanced with
+                        international pedagogy, smart classrooms, and an environment where curiosity thrives and
+                        leadership is born.</p>
+                    <div class="about-tags">
+                        <span class="tag hover-target">CBSE Affiliated</span>
+                        <span class="tag hover-target">ISO 9001:2015 Certified</span>
+                        <span class="tag hover-target">National Award Winner</span>
+                        <span class="tag hover-target">Digital Campus</span>
+                        <span class="tag hover-target">Green School</span>
+                        <span class="tag hover-target">Boarding Available</span>
+                    </div>
+                    <div style="margin-top:2rem">
+                        <a href="#academics" class="btn-primary hover-target" style="display:inline-flex">
+                            Explore Academics <i class="fas fa-arrow-right" style="margin-left:0.5rem"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============================================================
+     FEATURES
+     ============================================================ -->
+    <section id="highlights">
+        <div class="container">
+            <div class="features-head reveal">
+                <span class="section-label">Highlights & Features</span>
+                <h2 class="section-title">Everything Your Child<br />Deserves to <span class="grad-text">Thrive</span>
+                </h2>
+                <p class="section-sub">We offer world-class infrastructure and programs designed to develop the leaders
+                    of tomorrow.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card reveal hover-target">
+                    <div class="feature-icon"><i class="fas fa-tv"></i></div>
+                    <h3>Smart Classrooms</h3>
+                    <p>Interactive digital boards, AI-powered learning tools, and virtual labs that make every lesson
+                        engaging and effective.</p>
+                </div>
+                <div class="feature-card reveal hover-target">
+                    <div class="feature-icon"><i class="fas fa-bus-alt"></i></div>
+                    <h3>GPS-Tracked Transport</h3>
+                    <p>Safe, comfortable, and GPS-monitored school buses with real-time tracking for parents, covering
+                        40+ routes across the city.</p>
+                </div>
+                <div class="feature-card reveal hover-target">
+                    <div class="feature-icon"><i class="fas fa-running"></i></div>
+                    <h3>Sports & Activities</h3>
+                    <p>Olympic-size swimming pool, cricket ground, basketball courts, football field, and 25+
+                        extracurricular clubs to explore.</p>
+                </div>
+                <div class="feature-card reveal hover-target">
+                    <div class="feature-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+                    <h3>Expert Faculty</h3>
+                    <p>Highly qualified teachers with an average of 12+ years of experience, trained in modern pedagogy
+                        and student-centric learning.</p>
+                </div>
+                <div class="feature-card reveal hover-target">
+                    <div class="feature-icon"><i class="fas fa-microscope"></i></div>
+                    <h3>Research Labs</h3>
+                    <p>State-of-the-art Physics, Chemistry, and Biology labs equipped with the latest instruments to
+                        foster scientific curiosity.</p>
+                </div>
+                <div class="feature-card reveal hover-target">
+                    <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3>Safe Campus</h3>
+                    <p>24/7 CCTV surveillance, trained security personnel, and a fully walled campus ensuring complete
+                        child safety and security.</p>
+                </div>
+                <div class="feature-card reveal hover-target">
+                    <div class="feature-icon"><i class="fas fa-globe"></i></div>
+                    <h3>Global Exposure</h3>
+                    <p>Student exchange programs, Model UN conferences, and international competitions to broaden
+                        horizons and build global citizens.</p>
+                </div>
+                <div class="feature-card reveal hover-target">
+                    <div class="feature-icon"><i class="fas fa-heartbeat"></i></div>
+                    <h3>Wellness Centre</h3>
+                    <p>Dedicated school counselors, a medical clinic, and mindfulness programs to ensure the mental and
+                        physical health of every student.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+     ACADEMICS
+     ============================================================ -->
+    <section id="academics">
+        <div class="container">
+            <div class="inner">
+                <div class="reveal">
+                    <span class="section-label">Curriculum</span>
+                    <h2 class="section-title">Academic<br /><span class="grad-text">Excellence</span><br />at Every
+                        Stage</h2>
+
+                    <div class="tab-buttons">
+                        <button class="tab-btn active hover-target" data-tab="primary">
+                            <i class="fas fa-star"></i> Primary (Class I–V)
+                        </button>
+                        <button class="tab-btn hover-target" data-tab="secondary">
+                            <i class="fas fa-book-open"></i> Secondary (Class VI–X)
+                        </button>
+                        <button class="tab-btn hover-target" data-tab="senior">
+                            <i class="fas fa-flask"></i> Senior Secondary (XI–XII)
+                        </button>
+                    </div>
+                </div>
+                <div class="tab-content-wrap reveal">
+                    <div class="tab-pane active" id="tab-primary">
+                        <h3>Primary School<br /><span class="grad-text">Foundation Years</span></h3>
+                        <p>Our primary program builds strong academic foundations through activity-based learning,
+                            storytelling, and creative exploration. Every child's natural curiosity is channeled into
+                            meaningful knowledge.</p>
+                        <div class="subject-list">
+                            <span class="subject-pill">English Language Arts</span>
+                            <span class="subject-pill">Mathematics</span>
+                            <span class="subject-pill">Environmental Science</span>
+                            <span class="subject-pill">Hindi</span>
+                            <span class="subject-pill">Art & Craft</span>
+                            <span class="subject-pill">Music & Dance</span>
+                            <span class="subject-pill">Physical Education</span>
+                            <span class="subject-pill">Computer Basics</span>
+                        </div>
+                        <div class="highlight"><i class="fas fa-check-circle"></i> Activity-Based Learning (ABL)
+                            Methodology</div>
+                        <div class="highlight" style="margin-top:0.5rem"><i class="fas fa-check-circle"></i> No-bag
+                            Fridays & Creative Days</div>
+                        <div class="highlight" style="margin-top:0.5rem"><i class="fas fa-check-circle"></i>
+                            Parent-Teacher Integration Program</div>
+                    </div>
+                    <div class="tab-pane" id="tab-secondary">
+                        <h3>Secondary School<br /><span class="grad-text">Building Depth</span></h3>
+                        <p>The secondary curriculum follows the CBSE framework while encouraging critical thinking,
+                            project-based learning, and research skills. Students explore diverse subjects before making
+                            their stream choices.</p>
+                        <div class="subject-list">
+                            <span class="subject-pill">Mathematics</span>
+                            <span class="subject-pill">Science</span>
+                            <span class="subject-pill">Social Studies</span>
+                            <span class="subject-pill">English</span>
+                            <span class="subject-pill">Hindi / Sanskrit</span>
+                            <span class="subject-pill">Computer Science</span>
+                            <span class="subject-pill">3rd Language</span>
+                        </div>
+                        <div class="highlight"><i class="fas fa-check-circle"></i> Dedicated Board Exam Preparation
+                        </div>
+                        <div class="highlight" style="margin-top:0.5rem"><i class="fas fa-check-circle"></i> Science &
+                            Maths Olympiad Coaching</div>
+                        <div class="highlight" style="margin-top:0.5rem"><i class="fas fa-check-circle"></i> Career
+                            Counselling from Class VIII</div>
+                    </div>
+                    <div class="tab-pane" id="tab-senior">
+                        <h3>Senior Secondary<br /><span class="grad-text">University Ready</span></h3>
+                        <p>Our senior secondary streams — Science, Commerce, and Humanities — are designed to prepare
+                            students for top universities in India and abroad, with JEE, NEET, CA, and humanities
+                            entrance guidance.</p>
+                        <div class="subject-list">
+                            <span class="subject-pill">Science (PCM/PCB)</span>
+                            <span class="subject-pill">Commerce</span>
+                            <span class="subject-pill">Humanities</span>
+                            <span class="subject-pill">JEE Coaching</span>
+                            <span class="subject-pill">NEET Coaching</span>
+                            <span class="subject-pill">CA Foundation</span>
+                        </div>
+                        <div class="highlight"><i class="fas fa-check-circle"></i> 98.4% Board Pass Rate (2025 batch)
+                        </div>
+                        <div class="highlight" style="margin-top:0.5rem"><i class="fas fa-check-circle"></i>
+                            IIT/NIT/AIIMS Selections Every Year</div>
+                        <div class="highlight" style="margin-top:0.5rem"><i class="fas fa-check-circle"></i> University
+                            Application Mentorship</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+     teachers
+     ============================================================ -->
+
+    <section class="teachers-section" id="teachers">
+        <h1 class="section-title">Our Teachers</h1>
+
+        <!-- Senior Secondary -->
+        <h2 class="teacher-group-title">Senior Secondary Teachers</h2>
+
+        <h3 class="sub-group">Science</h3>
+        <div class="teachers-container" id="senior-science"></div>
+
+        <h3 class="sub-group">Arts</h3>
+        <div class="teachers-container" id="senior-arts"></div>
+
+        <!-- Secondary -->
+        <h2 class="teacher-group-title">Secondary Teachers</h2>
+        <div class="teachers-container" id="secondary"></div>
+
+        <!-- Primary -->
+        <h2 class="teacher-group-title">Primary Teachers</h2>
+        <div class="teachers-container" id="primary"></div>
+    </section>
+    <script src="teachers.js"></script>
+
+
+
+
+    <!-- ============================================================
+     TOPPERS
+     ============================================================ -->
+    <section id="achievers">
+        <div class="container">
+            <div style="text-align:center;max-width:600px;margin:0 auto" class="reveal">
+                <span class="section-label">Hall of Fame</span>
+                <h2 class="section-title">Our <span class="grad-text">Achievers</span><br /></h2>
+                <p class="section-sub">Celebrating the brilliance of our students who made us proud.</p>
+            </div>
+            <div class="toppers-grid">
+                <div class="topper-card reveal hover-target">
+                    <div class="topper-avatar">👩‍🎓</div>
+                    <div class="topper-name">Priya Sharma</div>
+                    <div class="topper-class">Class XII · Science</div>
+                    <div class="topper-percent">98.8%</div>
+                    <p style="font-size:0.78rem;color:var(--muted);margin-top:0.5rem">JEE Advanced AIR 142</p>
+                </div>
+                <div class="topper-card reveal hover-target">
+                    <div class="topper-avatar">👨‍🎓</div>
+                    <div class="topper-name">Arjun Verma</div>
+                    <div class="topper-class">Class XII · Commerce</div>
+                    <div class="topper-percent">97.6%</div>
+                    <p style="font-size:0.78rem;color:var(--muted);margin-top:0.5rem">CA Foundation Topper</p>
+                </div>
+                <div class="topper-card reveal hover-target">
+                    <div class="topper-avatar">👩‍💼</div>
+                    <div class="topper-name">Kavya Patel</div>
+                    <div class="topper-class">Class X · CBSE</div>
+                    <div class="topper-percent">99.2%</div>
+                    <p style="font-size:0.78rem;color:var(--muted);margin-top:0.5rem">School Topper · State Rank 3</p>
+                </div>
+                <div class="topper-card reveal hover-target">
+                    <div class="topper-avatar">👦</div>
+                    <div class="topper-name">Rahul Mishra</div>
+                    <div class="topper-class">Class XII · Science</div>
+                    <div class="topper-percent">98.2%</div>
+                    <p style="font-size:0.78rem;color:var(--muted);margin-top:0.5rem">NEET 2025 · AIR 287</p>
+                </div>
+                <div class="topper-card reveal hover-target">
+                    <div class="topper-avatar">👩‍🎓</div>
+                    <div class="topper-name">Priya Sharma</div>
+                    <div class="topper-class">Class XII · Science</div>
+                    <div class="topper-percent">98.8%</div>
+                    <p style="font-size:0.78rem;color:var(--muted);margin-top:0.5rem">JEE Advanced AIR 142</p>
+                </div>
+                <div class="topper-card reveal hover-target">
+                    <div class="topper-avatar">👨‍🎓</div>
+                    <div class="topper-name">Arjun Verma</div>
+                    <div class="topper-class">Class XII · Commerce</div>
+                    <div class="topper-percent">97.6%</div>
+                    <p style="font-size:0.78rem;color:var(--muted);margin-top:0.5rem">CA Foundation Topper</p>
+                </div>
+                <div class="topper-card reveal hover-target">
+                    <div class="topper-avatar">👩‍💼</div>
+                    <div class="topper-name">Kavya Patel</div>
+                    <div class="topper-class">Class X · CBSE</div>
+                    <div class="topper-percent">99.2%</div>
+                    <p style="font-size:0.78rem;color:var(--muted);margin-top:0.5rem">School Topper · State Rank 3</p>
+                </div>
+                <div class="topper-card reveal hover-target">
+                    <div class="topper-avatar">👦</div>
+                    <div class="topper-name">Rahul Mishra</div>
+                    <div class="topper-class">Class XII · Science</div>
+                    <div class="topper-percent">98.2%</div>
+                    <p style="font-size:0.78rem;color:var(--muted);margin-top:0.5rem">NEET 2025 · AIR 287</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ============================================================
+     gallery
+     ============================================================ -->
+    <section class="gallery-section" id="gallery">
+        <h1 class="section-title">Our Gallery</h1>
+
+        <!-- Filter Buttons -->
+        <div class="gallery-filters">
+            <button data-category="campus" class="active">Campus</button>
+            <button data-category="events">Events</button>
+            <button data-category="sports">Sports</button>
+            <button data-category="labs">Labs</button>
+        </div>
+
+        <!-- Images Container -->
+        <div class="gallery-container" id="gallery-container"></div>
+    </section>
+
+    <script src="gallery.js"></script>
+
+
+    <!-- ============================================================
+     CONTACT
+     ============================================================ -->
+    <section id="contact">
+        <div class="container">
+            <div class="inner">
+                <div class="reveal">
+                    <span class="section-label">Contact Us</span>
+                    <h2 class="section-title">Visit Us,<br />We'd Love to<br /><span class="grad-text">Meet You</span>
+                    </h2>
+                    <p class="section-sub">Our admissions team is here to answer all your questions and guide you
+                        through the process.</p>
+
+                </div>
+                <div class="reveal">
+                    <div class="map-wrap">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7096.506921568554!2d77.51529990876284!3d27.211191000815308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3973a302ddbfff99%3A0x610cc04315cffed1!2sLaxmi%20Vilas%20Palace!5e0!3m2!1sen!2sin!4v1774721664785!5m2!1sen!2sin"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <!-- Replace the map-wrap div above with an actual embed: -->
+                    <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18..." allowfullscreen loading="lazy"></iframe> -->
+                </div>
+            </div>
+            <div class="contact-info">
+                <div class="contact-card hover-target">
+                    <div class="contact-card-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <div>
+                        <div class="contact-card-label">Address</div>
+                        <div class="contact-card-val">12, Vidya Nagar, Gomti Nagar, Lucknow, UP – 226010</div>
+                    </div>
+                </div>
+                <div class="contact-card hover-target">
+                    <div class="contact-card-icon"><i class="fas fa-phone-alt"></i></div>
+                    <div>
+                        <div class="contact-card-label">Phone</div>
+                        <div class="contact-card-val">+91 522 400 1234 | +91 98765 43210</div>
+                    </div>
+                </div>
+                <div class="contact-card hover-target">
+                    <div class="contact-card-icon"><i class="fas fa-envelope"></i></div>
+                    <div>
+                        <div class="contact-card-label">Email</div>
+                        <div class="contact-card-val">admissions@nalandainternational.edu.in</div>
+                    </div>
+                </div>
+                <div class="contact-card hover-target">
+                    <div class="contact-card-icon"><i class="fas fa-clock"></i></div>
+                    <div>
+                        <div class="contact-card-label">Office Hours</div>
+                        <div class="contact-card-val">Mon–Sat: 8:00 AM – 4:00 PM</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ============================================================
+     FOOTER
+     ============================================================ -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="nav-logo" style="margin-bottom:1.2rem">
+                    <div class="logo-icon">🏛</div>
+                    <span>Radhe Krishna Senior Secondary School</span>
+                </div>
+                <p>Shaping Future Leaders since 1994. An institution committed to academic excellence, character
+                    development, and holistic education.</p>
+                <div class="footer-social">
+                    <a href="#" class="social-icon hover-target" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon hover-target" title="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="social-icon hover-target" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon hover-target" title="Twitter/X"><i class="fab fa-x-twitter"></i></a>
+                    <a href="#" class="social-icon hover-target" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#highlights">Highlights</a></li>
+                    <li><a href="#academics">Academics</a></li>
+                    <li><a href="#teachers">Teachers</a></li>
+                    <li><a href="#achievers">Achievers</a></li>
+                    <li><a href="#contact">Contact</a></li>
+
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Admissions</h4>
+                <ul>
+                    <li><a href="#">Apply Online</a></li>
+                    <li><a href="#">Admission Process</a></li>
+                    <li><a href="#">Fee Structure</a></li>
+                    <li><a href="#">Scholarships</a></li>
+                    <li><a href="#">Download Prospectus</a></li>
+                    <li><a href="#">FAQs</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Programs</h4>
+                <ul>
+                    <li><a href="#">Primary School</a></li>
+                    <li><a href="#">Secondary School</a></li>
+                    <li><a href="#">Senior Secondary</a></li>
+                    <li><a href="#">Hostel / Boarding</a></li>
+                    <li><a href="#">Summer Camp</a></li>
+                    <li><a href="#">Alumni Network</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Radhe Krishna Senior Secondary School</p> 
+            <div class="creator-credit">
+                <i class="fas fa-code"></i> Designed & Developed with ❤️ by <span>Sharad Kumar | webdeveloper</span>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+    <script src="mediaquiery.js"></script>
+</body>
+
+</html>
