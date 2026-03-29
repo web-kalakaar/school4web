@@ -12,12 +12,97 @@
 ───────────────────────────────────────────── */
 @media (max-width: 1024px) {
   /* NAV */
+  #progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 3px;
+    width: 0;
+    z-index: 9997;
+    background: var(--grad);
+    transition: width 0.1s linear;
+    border-radius: 0 2px 2px 0;
+  }
   .nav-links {
     gap: 1.2rem;
   }
 
   .nav-links a {
     font-size: 0.82rem;
+  } /* ── MOBILE MENU ── */
+  .mobile-menu {
+    position: fixed;
+    top: 0vh; /* center vertically a bit */
+    right: -100%;
+    width: 85%;
+    height: 90vh; /* ✅ your requirement */
+    background: rgba(20, 20, 20, 0.95);
+    backdrop-filter: blur(12px);
+    padding: 1.5rem;
+    padding-top: 0.5rem;
+    z-index: 9999;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+
+    border-radius: 16px 0 0 16px; /* smooth rounded edge */
+
+    transition: right 0.4s ease;
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+
+    overflow-y: hidden; /* scroll if content increases */
+  }
+
+  /* ── OPEN STATE ── */
+  .mobile-menu.open {
+    right: 0;
+  }
+
+  /* ── LINKS ── */
+  .mobile-menu a {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #eee;
+
+    padding: 0.7rem 0.9rem;
+    border-radius: 10px;
+
+    text-decoration: none;
+    transition: 0.3s;
+  }
+
+  /* Hover */
+  .mobile-menu a:hover {
+    background: rgba(255, 255, 255, 0.08);
+    color: #007bff;
+    transform: translateX(5px);
+  }
+
+  /* Active */
+  .mobile-menu a.active {
+    background: rgba(0, 123, 255, 0.15);
+    color: #007bff;
+  }
+
+  /* CTA */
+  .mobile-menu .btn-primary {
+    margin-top: 1rem;
+    padding: 0.8rem;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #007bff, #00aeef);
+    color: #fff;
+    text-align: center;
+    font-weight: 600;
+    width: 280px;
+  }
+  .mobile-menu {
+    display: flex; /* always flex */
+    right: -100%; /* hidden off-screen by default */
+  }
+
+  .mobile-menu.open {
+    right: -40px; /* slide in when open */
   }
 
   /* ABOUT */
@@ -144,7 +229,7 @@
   }
 
   .about-img-frame {
-    aspect-ratio: 4/3;
+    aspect-ratio: 0/3;
     border-radius: 20px;
   }
 
@@ -190,8 +275,9 @@
   }
 
   .features-grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
+    overflow-y: hidden;
   }
 
   .feature-card {
@@ -247,7 +333,7 @@
   }
 
   .teachers-container {
-    justify-content: center;
+    justify-content: left;
     gap: 16px;
   }
 
@@ -255,17 +341,20 @@
     width: calc(50% - 20px);
     min-width: 140px;
     max-width: 180px;
-    padding: 14px;
+    padding: 15px 2px;
   }
 
   .teacher-card img {
     width: 110px;
+    margin: 0 auto;
     height: 110px;
     border-radius: 10px;
   }
 
   .teacher-card h3 {
     font-size: 0.88rem;
+    margin-top: 10px;
+    font-weight: bolder;
   }
 
   .teacher-card p {
@@ -296,14 +385,20 @@
   }
 
   .toppers-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
+    margin: -30px;
     margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    gap: 0px;
   }
 
   .topper-card {
-    padding: 1.4rem 1rem;
+    padding: 10px 0px;
     border-radius: 18px;
+    height: 200px;
+    width: 30.3%;
   }
 
   .topper-avatar {
@@ -318,6 +413,7 @@
 
   .topper-percent {
     font-size: 1.6rem;
+    color: gold;
   }
 
   /* ── GALLERY ── */
@@ -369,6 +465,17 @@
   .footer-grid {
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
+  }
+  .footer-col ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .footer-col ul li a {
+    font-weight: bolder;
+    font-size: larger;
   }
 
   .footer-brand {

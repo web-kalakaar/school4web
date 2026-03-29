@@ -172,42 +172,9 @@ nav.scrolled {
   box-shadow: 0 8px 30px rgba(79, 143, 255, 0.5);
 }
 
-.hamburger {
-  display: none;
-  flex-direction: column;
-  gap: 5px;
-  cursor: none;
-  padding: 6px;
-  border: none;
-  background: transparent;
-}
-
-.hamburger span {
-  display: block;
-  width: 24px;
-  height: 2px;
-  background: var(--text);
-  border-radius: 2px;
-  transition:
-    transform 0.35s,
-    opacity 0.3s;
-}
-
-.hamburger.active span:nth-child(1) {
-  transform: translateY(7px) rotate(45deg);
-}
-
-.hamburger.active span:nth-child(2) {
-  opacity: 0;
-  transform: scaleX(0);
-}
-
-.hamburger.active span:nth-child(3) {
-  transform: translateY(-7px) rotate(-45deg);
-}
 
 .mobile-menu {
-  display: none;
+  display: flex;          /* ← always flex, hidden via right: -100% */
   position: fixed;
   top: 0;
   right: -100%;
@@ -235,6 +202,37 @@ nav.scrolled {
   border-bottom: 1px solid var(--border);
 }
 
+.hamburger {
+  display: none;  /* Hidden on desktop */
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  padding: 6px;
+  border: none;
+  background: transparent;
+  z-index: 1001;  /* ADD THIS */
+}
+
+.hamburger span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--text);
+  border-radius: 2px;
+  transition: all 0.35s ease;  /* IMPROVED */
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
 /* ============================================================
    HERO SECTION
    ============================================================ */
@@ -944,7 +942,7 @@ section {
 }
 
 .topper-card {
-  background: var(--surface);
+  background:#2A2A2A;
   border: 1px solid var(--border);
   border-radius: 24px;
   padding: 2rem 1.5rem;
@@ -997,22 +995,23 @@ section {
   font-weight: 700;
   font-size: 1.05rem;
   margin-bottom: 0.25rem;
+  color: rgb(255, 255, 255);
 }
 
 .topper-class {
   font-size: 0.82rem;
-  color: var(--muted);
+  
   margin-bottom: 0.8rem;
+  color: wheat;
 }
 
 .topper-percent {
   font-family: "Playfair Display", serif;
   font-size: 2rem;
   font-weight: 700;
-  background: var(--grad);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+
   background-clip: text;
+  color: #FFC107;
 }
 
 .topper-card::after {
@@ -1080,6 +1079,7 @@ section {
   text-align: left;
   transform: translateY(100%);
   transition: 0.4s ease;
+  
 }
 
 /* Hover Effects */

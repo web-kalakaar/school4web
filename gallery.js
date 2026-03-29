@@ -10,17 +10,6 @@ const gallery = [
   { img: "main1.jpg", title: "Football Match", category: "sports" },
 
   { img: "main1.jpg", title: "Science Lab", category: "labs" },
-  { img: "main1.jpg", title: "Chemistry Lab", category: "labs" }
-  ,
-  { img: "main1.jpg", title: "Classroom", category: "campus" },
-
-  { img: "main1.jpg", title: "Annual Function", category: "events" },
-  { img: "main1.jpg", title: "Independence Day", category: "events" },
-
-  { img: "main1.jpg", title: "Sports Day", category: "sports" },
-  { img: "main1.jpg", title: "Football Match", category: "sports" },
-
-  { img: "main1.jpg", title: "Science Lab", category: "labs" },
   { img: "main1.jpg", title: "Chemistry Lab", category: "labs" },
   { img: "main1.jpg", title: "Classroom", category: "campus" },
 
@@ -41,24 +30,33 @@ const gallery = [
   { img: "main1.jpg", title: "Football Match", category: "sports" },
 
   { img: "main1.jpg", title: "Science Lab", category: "labs" },
-  { img: "main1.jpg", title: "Chemistry Lab", category: "labs" }
+  { img: "main1.jpg", title: "Chemistry Lab", category: "labs" },
+  { img: "main1.jpg", title: "Classroom", category: "campus" },
+
+  { img: "main1.jpg", title: "Annual Function", category: "events" },
+  { img: "main1.jpg", title: "Independence Day", category: "events" },
+
+  { img: "main1.jpg", title: "Sports Day", category: "sports" },
+  { img: "main1.jpg", title: "Football Match", category: "sports" },
+
+  { img: "main1.jpg", title: "Science Lab", category: "labs" },
+  { img: "main1.jpg", title: "Chemistry Lab", category: "labs" },
 ];
 
 const container = document.getElementById("gallery-container");
 const buttons = document.querySelectorAll(".gallery-filters button");
-
 
 // 🎯 Render Gallery (ONLY selected category)
 function renderGallery(category = "campus") {
   container.innerHTML = "";
 
   // Filter by category
-  const filteredData = gallery.filter(item => item.category === category);
+  const filteredData = gallery.filter((item) => item.category === category);
 
   // ✅ Sort by title (A → Z)
   filteredData.sort((a, b) => a.title.localeCompare(b.title));
 
-  filteredData.forEach(item => {
+  filteredData.forEach((item) => {
     const card = document.createElement("div");
     card.className = "gallery-item";
     card.setAttribute("data-aos", "zoom-in");
@@ -68,7 +66,7 @@ function renderGallery(category = "campus") {
       <div class="overlay">${item.title}</div>
     `;
 
-    card.querySelector("img").addEventListener("click", () => {
+    card.addEventListener("click", () => {
       openLightbox(item.img);
     });
 
@@ -77,11 +75,10 @@ function renderGallery(category = "campus") {
 }
 
 // 🎯 Button Click Handling
-buttons.forEach(btn => {
+buttons.forEach((btn) => {
   btn.addEventListener("click", () => {
-
     // Remove active class
-    buttons.forEach(b => b.classList.remove("active"));
+    buttons.forEach((b) => b.classList.remove("active"));
 
     // Add active to clicked
     btn.classList.add("active");
@@ -93,33 +90,14 @@ buttons.forEach(btn => {
   });
 });
 
-
 // 🎯 Lightbox Functions
 function openLightbox(img) {
-  const lightbox = document.getElementById("lightbox");
-  const lightboxImg = document.getElementById("lightbox-img");
-
-  lightbox.style.display = "flex";
-  lightboxImg.src = img;
+  window.open(img, "_blank");
 }
 
 function closeLightbox() {
   document.getElementById("lightbox").style.display = "none";
 }
-// Open image
-function openLightbox(img) {
-  const lightbox = document.getElementById("lightbox");
-  const lightboxImg = document.getElementById("lightbox-img");
-
-  lightbox.style.display = "flex";
-  lightboxImg.src = img;
-}
-
-// Close
-function closeLightbox() {
-  document.getElementById("lightbox").style.display = "none";
-}
-
 
 // 🚀 Initial Load (Campus only)
 renderGallery("campus");
