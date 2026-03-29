@@ -64,12 +64,13 @@
     font-size: 1rem;
     font-weight: 500;
     color: #eee;
-
     padding: 0.7rem 0.9rem;
     border-radius: 10px;
-
     text-decoration: none;
     transition: 0.3s;
+  }
+  .mobile-menu li {
+    margin-top: 0;
   }
 
   /* Hover */
@@ -95,6 +96,18 @@
     text-align: center;
     font-weight: 600;
     width: 280px;
+  }
+  /* Remove default click/focus styles */
+  .btn-primary:focus,
+  .btn-primary:active {
+    outline: none;
+    background: linear-gradient(135deg, #007bff, #00aeef); /* keep same */
+    box-shadow: none;
+  }
+
+  /* For mobile tap highlight (VERY IMPORTANT) */
+  .btn-primary {
+    -webkit-tap-highlight-color: transparent;
   }
   .mobile-menu {
     display: flex; /* always flex */
